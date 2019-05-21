@@ -34,7 +34,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 
 		http.authorizeRequests()
-			.antMatchers("/").hasRole("EMPLOYEE")
+			.antMatchers("/welcome/").permitAll()
+			.antMatchers("/employees/**").hasRole("EMPLOYEE")
 			.antMatchers("/leaders/**").hasRole("MANAGER")
 			.antMatchers("/systems/**").hasRole("ADMIN")
 			.and()
@@ -44,11 +45,34 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 				.successHandler(customAuthenticationSuccessHandler)
 				.permitAll()
 			.and()
-			.logout().permitAll()
-			.and()
-			.exceptionHandling().accessDeniedPage("/access-denied");
+			.logout().permitAll();
 		
 	}
+	
+	
+//	antMatchers("/").permitAll()
+//
+//	.antMatchers("/employees").hasRole("EMPLOYEE")
+//
+//	.antMatchers("/leaders/**").hasRole("MANAGER")
+//
+//	.antMatchers("/systems/**").hasRole("ADMIN")
+//
+//	.and()
+//
+//	.formLogin()
+//
+//	.loginPage("/showMyLoginPage")
+//
+//	.loginProcessingUrl("/authenticateTheUser")
+//
+//	.permitAll()
+//
+//	.and()
+//
+//	.logout().permitAll();
+//
+//	}
 	
 	//beans
 	//bcrypt bean definition

@@ -28,6 +28,15 @@ public class DemoController {
 		return "systems";
 	}
 	
+	// Landing page for all the users
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		
+		return "welcome";
+	}
+	
+	
 }
 
 
