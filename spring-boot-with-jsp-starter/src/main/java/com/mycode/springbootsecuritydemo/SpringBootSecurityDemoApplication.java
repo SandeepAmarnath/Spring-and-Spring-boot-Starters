@@ -1,13 +1,13 @@
-package com.mycode.springbootwithjspstarter;
+package com.mycode.springbootsecuritydemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootWithJspStarterApplication {
+public class SpringBootSecurityDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootWithJspStarterApplication.class, args);
+		SpringApplication.run(SpringBootSecurityDemoApplication.class, args);
 	}
 
 }
