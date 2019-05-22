@@ -61,6 +61,13 @@
 	
 	</form:form>
 	
+	<hr>
+	
+	See the database content
+	
+	<br>
+	<a href="${pageContext.request.contextPath}/showDbContent">Click here</a>
+	
 </body>
 
 </html>

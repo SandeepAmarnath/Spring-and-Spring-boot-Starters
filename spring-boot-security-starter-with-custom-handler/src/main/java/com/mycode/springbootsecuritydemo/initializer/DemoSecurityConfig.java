@@ -50,30 +50,6 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	
-//	antMatchers("/").permitAll()
-//
-//	.antMatchers("/employees").hasRole("EMPLOYEE")
-//
-//	.antMatchers("/leaders/**").hasRole("MANAGER")
-//
-//	.antMatchers("/systems/**").hasRole("ADMIN")
-//
-//	.and()
-//
-//	.formLogin()
-//
-//	.loginPage("/showMyLoginPage")
-//
-//	.loginProcessingUrl("/authenticateTheUser")
-//
-//	.permitAll()
-//
-//	.and()
-//
-//	.logout().permitAll();
-//
-//	}
-	
 	//beans
 	//bcrypt bean definition
 	@Bean
